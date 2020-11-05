@@ -1,5 +1,5 @@
 FROM golang:alpine3.12 AS builder
-WORKDIR /go/src/github.com/testcontainers/helloworld
+WORKDIR /go/src/github.com/kissl0id/helloworld
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . ./
